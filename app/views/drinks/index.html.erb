@@ -1,0 +1,8 @@
+<h1> DRANKKKK MENU </h1>
+
+
+<% @drinks.each do |drink| %>
+	<h1><%= drink.description %></h1>
+	<h2><%= drink.price %> </h2>
+	<%= link_to 'EDIT', edit_drink_path(drink) %>
+<% end %>
